@@ -9,14 +9,12 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ViewBookDTO implements Serializable {
-    private Long id;
+public class FilteredSearchDTO implements Serializable {
     private String title;
-    private Integer numberOfPages;
     private String isbn;
     private Integer year;
-    private String author;
-    private String publishingCompany;
-    private String category;
-    private String language;
+    private Long authorId;
+    private Long publishingCompanyId;
+    private Long categoryId;
+    private Long languageId;
 }
